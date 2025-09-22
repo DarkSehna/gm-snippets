@@ -1,0 +1,53 @@
+{
+  "name": "gm-snippets",
+  "description": "Repositório de apoio para aulas de Jogos Digitais e Robótica.",
+  "categories": {
+    "GameMaker": {
+      "path": "snippets/GameMaker/",
+      "description": "Exemplos em GML para projetos no Game Maker Studio 2.",
+      "tags": ["gml", "plataforma", "topview", "colisao", "inimigos"]
+    },
+    "Construct3": {
+      "path": "snippets/Construct3/",
+      "description": "Exemplos e blocos prontos para usar no Construct 3.",
+      "tags": ["plataforma", "eventos", "hud", "colecionaveis"]
+    },
+    "Scratch": {
+      "path": "snippets/Scratch/",
+      "description": "Jogos e scripts em blocos para iniciantes no Scratch.",
+      "tags": ["blocos", "iniciante", "pong", "clicker", "plataforma"]
+    },
+    "MinecraftEdu": {
+      "path": "snippets/MinecraftEdu/",
+      "description": "Atividades e desafios feitos no Minecraft Education.",
+      "tags": ["minecraft", "educacional", "minigame", "aventura"]
+    },
+    "Imagens": {
+      "path": "snippets/Imagens/",
+      "description": "Imagens de referência (sprites, pixel art, HUD).",
+      "tags": ["imagens", "pixelArt", "hud", "player", "inimigos"]
+    }
+  },
+  "turmas": {
+    "4N": {
+      "path": "snippets/Turmas/4N/",
+      "description": "Projetos e exemplos usados pela turma 4N (4º e 5º ano).",
+      "tags": ["scratch", "construct3", "iniciante"]
+    },
+    "5N": {
+      "path": "snippets/Turmas/5N/",
+      "description": "Projetos e exemplos usados pela turma 5N (6º ano).",
+      "tags": ["gamemaker", "plataforma", "intermediario"]
+    },
+    "5T": {
+      "path": "snippets/Turmas/5T/",
+      "description": "Projetos e exemplos usados pela turma 5T (7º e 8º ano).",
+      "tags": ["gamemaker", "gml", "plataforma", "avancado"]
+    },
+    "6N": {
+      "path": "snippets/Turmas/6N/",
+      "description": "Projetos e exemplos usados pela turma 6N (Ensino Médio / avançado).",
+      "tags": ["gamemaker", "construct3", "gdd", "avancado"]
+    }
+  }
+}
