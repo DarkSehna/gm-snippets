@@ -1,0 +1,16 @@
+{
+  "id": "pause-simple",
+  "title": "Pause/Menu simples",
+  "platform": "gamemaker",
+  "lang": "gml",
+  "level": "iniciante",
+  "tags": ["pause","menu","controller"],
+  "steps": [
+    "Crie obj_game (controller) e coloque na room.",
+    "No Create: 'global.paused = false;'",
+    "No Step: ao pressionar ESC, alternar pause.",
+    "Nos objetos que se movem (player/inimigos): execute lógica somente se 'global.paused == false'.",
+    "No Draw GUI do obj_game: desenhe 'PAUSADO' quando estiver pausado."
+  ],
+  "gml": "// obj_game → Create\nglobal.paused = false;\n\n// obj_game → Step\nif (keyboard_check_pressed(vk_escape)) {\n    global.paused = !global.paused;\n}\n\n// exemplo em obj_player → Step\nif (global.paused) exit; // aborta lógica de movimento\n// ... (movimento do player aqui)\n\n// obj_game → Draw GUI\nif (global.paused) {\n    draw_set_halign(fa_center);\n    draw_set_valign(fa_middle);\n    draw_text(room_width/2, room_height/2, \"PAUSADO\");\n}\n"
+}

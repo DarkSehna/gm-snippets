@@ -1,0 +1,15 @@
+{
+  "id": "platformer-basic",
+  "title": "Plataforma: mover, pular e colidir",
+  "platform": "gamemaker",
+  "lang": "gml",
+  "level": "iniciante",
+  "tags": ["plataforma","pulo","colisao","sólidos"],
+  "steps": [
+    "Tenha um obj_solid com 'Solid = true' para chão/parede.",
+    "No obj_player → Create: defina gravidade, velocidades e força do pulo.",
+    "No Step: leia input horizontal, aplique gravidade e trate saltos.",
+    "Faça a correção de colisão com sólidos no eixo X e Y."
+  ],
+  "gml": "// obj_player → Create\ngrav = 0.5;\nspd = 3;\njump = -8;\nhsp = 0;\nvsp = 0;\n\n// obj_player → Step\nvar mx = keyboard_check(vk_right) - keyboard_check(vk_left);\nhsp = mx * spd;\n\n// aplicar gravidade\nvsp += grav;\n\n// mover no eixo X\nx += hsp;\nif (place_meeting(x, y, obj_solid)) {\n    // recua passo a passo até não colidir\n    while (!place_meeting(x - sign(hsp), y, obj_solid)) x -= sign(hsp);\n    hsp = 0;\n}\n\n// mover no eixo Y\ny += vsp;\nif (place_meeting(x, y, obj_solid)) {\n    while (!place_meeting(x, y - sign(vsp), obj_solid)) y -= sign(vsp);\n    vsp = 0;\n}\n\n// checar chão e pular\nvar on_ground = place_meeting(x, y + 1, obj_solid);\nif (on_ground && keyboard_pressed(vk_space)) {\n    vsp = jump;\n}\n"
+}

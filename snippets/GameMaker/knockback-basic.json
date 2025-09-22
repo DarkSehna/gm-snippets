@@ -1,0 +1,14 @@
+{
+  "id": "knockback-basic",
+  "title": "Knockback (básico)",
+  "platform": "gamemaker",
+  "lang": "gml",
+  "level": "intermediario",
+  "tags": ["dano","knockback","topdown"],
+  "steps": [
+    "No obj_player (Create): hp, invulneravel = false.",
+    "No Collision (player vs inimigo): se não invulnerável, aplique dano e empurrão.",
+    "Use alarm para encerrar invulnerabilidade."
+  ],
+  "gml": "// obj_player → Create\nhp = 3;\ninvulneravel = false;\n\n// obj_player → Collision with obj_enemy\nif (!invulneravel) {\n    hp -= 1;\n    invulneravel = true;\n    var dir = point_direction(other.x, other.y, x, y);\n    hspeed = lengthdir_x(6, dir);\n    vspeed = lengthdir_y(6, dir);\n    alarm[0] = room_speed/2; // 0.5s\n}\n\n// obj_player → Alarm 0\ninvulneravel = false;\n"
+}

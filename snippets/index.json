@@ -50,4 +50,91 @@
       "tags": ["gamemaker", "construct3", "gdd", "avancado"]
     }
   }
+    ,
+  "items": [
+    {
+      "id": "movement-topdown-basic",
+      "title": "Movimento top-down (básico)",
+      "platform": "gamemaker",
+      "lang": "gml",
+      "turma": "comum",
+      "level": "iniciante",
+      "tags": ["player","movimento","topdown"],
+      "path": "snippets/GameMaker/movement-topdown-basic.json"
+    },
+    {
+      "id": "enemy-follow-player",
+      "title": "Inimigo persegue o player",
+      "platform": "gamemaker",
+      "lang": "gml",
+      "turma": "comum",
+      "level": "iniciante",
+      "tags": ["inimigo","ia","topdown"],
+      "path": "snippets/GameMaker/enemy-follow-player.json"
+    },
+    {
+      "id": "damage-cooldown",
+      "title": "Dano com cooldown",
+      "platform": "gamemaker",
+      "lang": "gml",
+      "turma": "comum",
+      "level": "iniciante",
+      "tags": ["dano","hp","cooldown"],
+      "path": "snippets/GameMaker/damage-cooldown.json"
+    },
+    {
+      "id": "hud-life",
+      "title": "HUD de vida (texto)",
+      "platform": "gamemaker",
+      "lang": "gml",
+      "turma": "comum",
+      "level": "iniciante",
+      "tags": ["hud","vida","texto"],
+      "path": "snippets/GameMaker/hud-life.json"
+    },
+
+    
+    {
+      "id": "collect-coin-hud",
+      "title": "Coletáveis com HUD",
+      "platform": "gamemaker",
+      "lang": "gml",
+      "turma": "comum",
+      "level": "iniciante",
+      "tags": ["coletavel","hud","pontuacao"],
+      "path": "snippets/GameMaker/collect-coin-hud.json"
+    },
+    {
+      "id": "pause-simple",
+      "title": "Pause/Menu simples",
+      "platform": "gamemaker",
+      "lang": "gml",
+      "turma": "comum",
+      "level": "iniciante",
+      "tags": ["pause","menu","controller"],
+      "path": "snippets/GameMaker/pause-simple.json"
+    },
+    {
+      "id": "knockback-basic",
+      "title": "Knockback (básico)",
+      "platform": "gamemaker",
+      "lang": "gml",
+      "turma": "5T",
+      "level": "intermediario",
+      "tags": ["dano","knockback","topdown"],
+      "path": "snippets/GameMaker/knockback-basic.json"
+    },
+    {
+      "id": "platformer-basic",
+      "title": "Plataforma: mover, pular e colidir",
+      "platform": "gamemaker",
+      "lang": "gml",
+      "turma": "comum",
+      "level": "iniciante",
+      "tags": ["plataforma","pulo","colisao"],
+      "path": "snippets/GameMaker/platformer-basic.json"
+    }
+  ]
+}
+
 }

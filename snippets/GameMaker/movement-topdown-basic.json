@@ -1,0 +1,14 @@
+{
+  "id": "movement-topdown-basic",
+  "title": "Movimento top-down (básico)",
+  "platform": "gamemaker",
+  "lang": "gml",
+  "level": "iniciante",
+  "tags": ["player", "movimento", "topdown"],
+  "steps": [
+    "Abra o obj_player.",
+    "No evento Create, defina uma velocidade (ex.: spd = 3).",
+    "No evento Step, leia as teclas e mova o player."
+  ],
+  "gml": "// Create (obj_player)\nspd = 3;\n\n// Step (obj_player)\nvar mx = keyboard_check(vk_right) - keyboard_check(vk_left);\nvar my = keyboard_check(vk_down) - keyboard_check(vk_up);\n\nx += mx * spd;\ny += my * spd;\n\n// Opcional: normaliza diagonal\nif (mx != 0 && my != 0) {\n    x -= mx * spd * 0.2929;\n    y -= my * spd * 0.2929;\n}"
+}

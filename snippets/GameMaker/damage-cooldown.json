@@ -1,0 +1,14 @@
+{
+  "id": "damage-cooldown",
+  "title": "Dano com cooldown (invulnerável por um tempo)",
+  "platform": "gamemaker",
+  "lang": "gml",
+  "level": "iniciante",
+  "tags": ["dano", "hp", "cooldown", "player"],
+  "steps": [
+    "No obj_player → Create: defina hp e invulneravel.",
+    "No obj_player → Collision com obj_enemy: aplique dano se não estiver invulnerável.",
+    "Use alarm para encerrar a invulnerabilidade."
+  ],
+  "gml": "// Create (obj_player)\nhp = 3;\ninvulneravel = false;\n\n// Collision (obj_player vs obj_enemy)\nif (!invulneravel) {\n    hp -= 1;\n    invulneravel = true;\n    alarm[0] = room_speed; // 1s de invulnerabilidade\n}\n\n// Alarm 0 (obj_player)\ninvulneravel = false;\n"
+}

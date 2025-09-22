@@ -1,0 +1,15 @@
+{
+  "id": "collect-coin-hud",
+  "title": "Coletáveis com HUD",
+  "platform": "gamemaker",
+  "lang": "gml",
+  "level": "iniciante",
+  "tags": ["coletavel","hud","pontuacao"],
+  "steps": [
+    "No obj_player (Create): garanta 'global.coins = 0;'",
+    "Crie obj_coin (sprite da moeda). Marque como 'Não sólido'.",
+    "Evento Collision (obj_player vs obj_coin): some +1 moeda e destrua a coin.",
+    "No obj_hud (Draw GUI): desenhe o texto com a quantidade de moedas."
+  ],
+  "gml": "// obj_player → Create\nif (!variable_global_exists(\"coins\")) global.coins = 0;\n\n// obj_player → Collision with obj_coin\nglobal.coins += 1;\nwith (other) instance_destroy();\n\n// obj_hud → Draw GUI\ndraw_set_halign(fa_left);\ndraw_set_valign(fa_top);\ndraw_text(16, 16, \"Moedas: \" + string(global.coins));\n"
+}

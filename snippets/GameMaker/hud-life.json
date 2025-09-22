@@ -1,0 +1,13 @@
+{
+  "id": "hud-life",
+  "title": "HUD de vida (texto simples)",
+  "platform": "gamemaker",
+  "lang": "gml",
+  "level": "iniciante",
+  "tags": ["hud", "vida", "texto"],
+  "steps": [
+    "Crie obj_hud.",
+    "No evento Draw de obj_hud: desenhe o texto com a vida atual do player."
+  ],
+  "gml": "// Draw (obj_hud)\nvar p = instance_find(obj_player, 0);\nif (instance_exists(p)) {\n    draw_set_halign(fa_left);\n    draw_set_valign(fa_top);\n    draw_text(16, 16, \"HP: \" + string(p.hp));\n}\n"
+}

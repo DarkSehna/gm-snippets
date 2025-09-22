@@ -1,0 +1,14 @@
+{
+  "id": "enemy-follow-player",
+  "title": "Inimigo persegue o player (top-down)",
+  "platform": "gamemaker",
+  "lang": "gml",
+  "level": "iniciante",
+  "tags": ["inimigo", "ia", "topdown"],
+  "steps": [
+    "Abra o obj_enemy.",
+    "No evento Create, defina a velocidade do inimigo (ex.: espd = 2).",
+    "No evento Step, direcione o inimigo ao player."
+  ],
+  "gml": "// Create (obj_enemy)\nespd = 2;\n\n// Step (obj_enemy)\nvar inst = instance_nearest(x, y, obj_player);\nif (instance_exists(inst)) {\n    var dir = point_direction(x, y, inst.x, inst.y);\n    x += lengthdir_x(espd, dir);\n    y += lengthdir_y(espd, dir);\n}\n"
+}
