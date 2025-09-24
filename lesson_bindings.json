@@ -1,0 +1,8 @@
+{
+  "updated_at": "2025-09-22",
+  "bindings": [
+    { "turma": "5T", "semana": "2025-09-25", "snippets": ["platformer-basic", "collect-coin-hud"] },
+    { "turma": "5N", "semana": "2025-09-25", "snippets": ["pause-simple"] },
+    { "turma": "4N", "semana": "2025-10-02", "snippets": ["platformer-basic"] }
+  ]
+}

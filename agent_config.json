@@ -1,0 +1,16 @@
+{
+  "index_file": "snippets/index.json",
+  "load_policy": {
+    "by_platform": ["gamemaker", "construct3"],
+    "fallback_to_tags": ["plataforma", "hud", "pause", "knockback", "coletavel"]
+  },
+  "answer_templates": {
+    "snippet_found": "Use o snippet **{{title}}** ({{platform}}). ID: {{id}}. Caminho: {{path}}.",
+    "no_snippet": "Não encontrei um snippet direto. Quer que eu gere um agora, seguindo o padrão do repositório?"
+  },
+  "priorities": {
+    "boost_turma_match": true,
+    "boost_level_match": true
+  },
+  "lesson_bindings_file": "lesson_bindings.json"
+}
