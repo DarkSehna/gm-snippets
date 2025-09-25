@@ -3,9 +3,26 @@
   "description": "Auxiliar os alunos na criação de jogos de plataforma no Game Maker Studio 2.",
 
   "index_file": "snippets/index.json",
+  "lesson_bindings_file": "lesson_bindings.json",
+
   "load_policy": {
     "by_platform": ["gamemaker"],
-    "fallback_to_tags": ["plataforma", "hud", "pause", "knockback", "coletavel", "ui"]
+    "fallback_to_tags": [
+      "plataforma",
+      "pulo",
+      "moeda",
+      "coletavel",
+      "hud",
+      "pontuacao",
+      "pause",
+      "menu",
+      "knockback",
+      "inimigo",
+      "patrulha",
+      "movimento",
+      "colisao",
+      "ui"
+    ]
   },
 
   "answer_templates": {
@@ -17,8 +34,6 @@
     "boost_turma_match": true,
     "boost_level_match": true
   },
-
-  "lesson_bindings_file": "lesson_bindings.json",
 
   "persona": {
     "instructions": "Você é o GameMaster GM, um agente especialista em ensinar programação de jogos digitais no Game Maker Studio 2. Seu público são alunos iniciantes do Ensino Fundamental 2 e Ensino Médio. Explique sempre de forma divertida e acessível, como se fosse um professor dentro de um jogo.\n\nFunções principais:\n- Explicar eventos e objetos (obj_player, obj_inimigo, obj_parede, etc.).\n- Ajudar a implementar mecânicas básicas de plataforma (pulo, colisão, inimigo que patrulha, coletáveis, HUD).\n- Sugerir melhorias criativas (ex.: pulo duplo, wall jump).\n- Corrigir erros comuns (variáveis não declaradas, colisão, chaves).\n- Transformar explicações em desafios (\"Missão: faça o inimigo patrulhar sem cair\").\n\nEstilo:\n- Animado, como um NPC que dá missões.\n- Incentivar tentativa/erro.\n- Usar metáforas de jogos e referências clássicas.\n\nRestrições:\n- Evitar jargões não explicados.\n- Adaptar sempre para iniciantes.",
@@ -33,15 +48,18 @@
 
   "routing": {
     "intents": [
-      { "match": ["pular", "pulo", "jump"], "prefer_tags": ["plataforma", "pulo"], "fallback_ids": ["platformer-basic"] },
-      { "match": ["moeda", "coletar", "coletável", "pontuar", "hud"], "prefer_tags": ["hud", "coletavel"], "fallback_ids": ["collect-coin-hud"] },
-      { "match": ["pausa", "pause", "menu"], "prefer_tags": ["pause", "ui"], "fallback_ids": ["pause-simple"] },
-      { "match": ["dano", "empurrão", "empurrao", "knockback"], "prefer_tags": ["knockback"], "fallback_ids": ["knockback-basic"] }
+      { "match": ["pular","pulo","jump","saltar"], "prefer_tags": ["plataforma","pulo"], "fallback_ids": ["jump","basic_movement"] },
+      { "match": ["moeda","moedas","coletar","coletavel","coletáveis","hud","pontuar","placar"], "prefer_tags": ["hud","coletavel","pontuacao"], "fallback_ids": ["collect_coin","hud_score"] },
+      { "match": ["pausa","pause","menu","pausar","retomar"], "prefer_tags": ["pause","ui"], "fallback_ids": ["pause_menu"] },
+      { "match": ["dano","empurrão","empurrao","knockback","recuo"], "prefer_tags": ["knockback","combate","fisica"], "fallback_ids": ["knockback"] },
+      { "match": ["inimigo","patrulha","patrulhar","andar de um lado ao outro"], "prefer_tags": ["inimigo","patrulha"], "fallback_ids": ["enemy_patrol"] },
+      { "match": ["movimento","andar","correr","controls","setas","a d"], "prefer_tags": ["plataforma","movimento"], "fallback_ids": ["basic_movement"] },
+      { "match": ["pulo duplo","double jump","dois pulos"], "prefer_tags": ["pulo"], "fallback_ids": ["double_jump"] }
     ],
     "tie_breaker": "prefer_lesson_binding_then_tags"
   },
 
   "capabilities": ["web_search", "canvas", "image_generation", "code_interpreter"],
-  "recommended_model": "GPT-5"
+  "recommended_model": "GPT-5",
+  "source_preference": "connector-first-then-web"
 }
-
