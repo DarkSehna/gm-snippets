@@ -1,5 +1,5 @@
 {
-  "name": "gm-snippets",
+  "name": "gm_snippets",
   "description": "Repositório de apoio para aulas de Jogos Digitais e Robótica.",
   "categories": {
     "GameMaker": {
@@ -53,86 +53,86 @@
     ,
   "items": [
     {
-      "id": "movement-topdown-basic",
-      "title": "Movimento top-down (básico)",
+      "id": "movement_topdown_basic",
+      "title": "Movimento top_down (básico)",
       "platform": "gamemaker",
       "lang": "gml",
       "turma": "comum",
       "level": "iniciante",
       "tags": ["player","movimento","topdown"],
-      "path": "snippets/GameMaker/movement-topdown-basic.json"
+      "path": "snippets/GameMaker/movement_topdown_basic.json"
     },
     {
-      "id": "enemy-follow-player",
+      "id": "enemy_follow_player",
       "title": "Inimigo persegue o player",
       "platform": "gamemaker",
       "lang": "gml",
       "turma": "comum",
       "level": "iniciante",
       "tags": ["inimigo","ia","topdown"],
-      "path": "snippets/GameMaker/enemy-follow-player.json"
+      "path": "snippets/GameMaker/enemy_follow_player.json"
     },
     {
-      "id": "damage-cooldown",
+      "id": "damage_cooldown",
       "title": "Dano com cooldown",
       "platform": "gamemaker",
       "lang": "gml",
       "turma": "comum",
       "level": "iniciante",
       "tags": ["dano","hp","cooldown"],
-      "path": "snippets/GameMaker/damage-cooldown.json"
+      "path": "snippets/GameMaker/damage_cooldown.json"
     },
     {
-      "id": "hud-life",
+      "id": "hud_life",
       "title": "HUD de vida (texto)",
       "platform": "gamemaker",
       "lang": "gml",
       "turma": "comum",
       "level": "iniciante",
       "tags": ["hud","vida","texto"],
-      "path": "snippets/GameMaker/hud-life.json"
+      "path": "snippets/GameMaker/hud_life.json"
     },
 
     
     {
-      "id": "collect-coin-hud",
+      "id": "collect_coin_hud",
       "title": "Coletáveis com HUD",
       "platform": "gamemaker",
       "lang": "gml",
       "turma": "comum",
       "level": "iniciante",
       "tags": ["coletavel","hud","pontuacao"],
-      "path": "snippets/GameMaker/collect-coin-hud.json"
+      "path": "snippets/GameMaker/collect_coin_hud.json"
     },
     {
-      "id": "pause-simple",
+      "id": "pause_simple",
       "title": "Pause/Menu simples",
       "platform": "gamemaker",
       "lang": "gml",
       "turma": "comum",
       "level": "iniciante",
       "tags": ["pause","menu","controller"],
-      "path": "snippets/GameMaker/pause-simple.json"
+      "path": "snippets/GameMaker/pause_simple.json"
     },
     {
-      "id": "knockback-basic",
+      "id": "knockback_basic",
       "title": "Knockback (básico)",
       "platform": "gamemaker",
       "lang": "gml",
       "turma": "5T",
       "level": "intermediario",
       "tags": ["dano","knockback","topdown"],
-      "path": "snippets/GameMaker/knockback-basic.json"
+      "path": "snippets/GameMaker/knockback_basic.json"
     },
     {
-      "id": "platformer-basic",
+      "id": "platformer_basic",
       "title": "Plataforma: mover, pular e colidir",
       "platform": "gamemaker",
       "lang": "gml",
       "turma": "comum",
       "level": "iniciante",
       "tags": ["plataforma","pulo","colisao"],
-      "path": "snippets/GameMaker/platformer-basic.json"
+      "path": "snippets/GameMaker/platformer_basic.json"
     }
   ]
 }
