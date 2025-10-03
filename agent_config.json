@@ -3,6 +3,7 @@
   "description": "Auxiliar os alunos na criação de jogos de plataforma no Game Maker Studio 2.",
 
   "index_file": "snippets/index.json",
+  "backlog_file": "backlog.json",
   "source_preference": "connector-first-then-web",
 
   "load_policy": {
